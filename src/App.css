@@ -21,11 +21,14 @@ body{font-family:var(--sans);color:var(--navy);background:var(--white);overflow-
 .topbar .left i{color:var(--red);margin-right:.4rem;}
 .topbar .right a{color:#a0aec0;margin-left:1rem;font-size:.95rem;transition:color .25s;}
 .topbar .right a:hover{color:var(--red);}
+.topbar .right {
+  margin-left: auto;
+}
 
 /* NAVBAR */
 nav{background:var(--white);position:sticky;top:0;z-index:999;border-bottom:1px solid #e8eaee;transition:box-shadow .3s;}
 nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.12);}
-.nav-inner{max-width:1240px;margin:auto;padding:6.5rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+.nav-inner{max-width:1240px;margin:auto;padding:2rem 2rem;display:flex;justify-content:space-between;align-items:center;}
 .logo{font-family:var(--serif);font-size:1.6rem;color:var(--navy);text-decoration:none;letter-spacing:-.02em;}
 .logo span{color:var(--red);}
 .nav-links{display:flex;gap:2.2rem;list-style:none;}
@@ -84,12 +87,12 @@ section{padding:5rem 0;}
 
 /* ABOUT SPLIT */
 .about-split{background:var(--navy2);color:var(--white);overflow:hidden;}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;}
-.about-img-col{position:relative;min-height:520px;}
+.about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:0;align-items:center;}
+.about-img-col{position:relative;min-height:350px;max-height:450px;}
 .about-img-col img{width:100%;height:100%;object-fit:cover;display:block;}
 .about-red-block{position:absolute;bottom:0;left:0;width:120px;height:120px;background:var(--red);}
 .about-hatch{position:absolute;bottom:0;right:0;width:80px;height:80px;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.12) 0,rgba(255,255,255,.12) 1px,transparent 1px,transparent 8px);}
-.about-content{padding:4rem 3.5rem;display:flex;flex-direction:column;justify-content:center;}
+.about-content{padding:2rem 2rem;display:flex;flex-direction:column;justify-content:center;}
 .about-content .section-label{color:var(--gold);}
 .about-content .section-label::before{background:var(--gold);}
 .about-content p{color:#a0b0c0;line-height:1.8;margin-bottom:1rem;}
